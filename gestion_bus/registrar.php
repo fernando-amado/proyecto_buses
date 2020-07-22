@@ -21,13 +21,13 @@
               <input type="text" id="empresa" name="empresa" class="form-control form-control-sm" required="">
              
               <br>
-               <input type="submit" value="Guardar" class="btn btn-info">
+               <input type="reset" value="Resetear" class="btn btn-secondary">
+               <input type="submit" value="Guardar" class="btn btn-dark">  
           </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-      </div>
+      
+        
+     
     </div>
   </div>
 </div>
