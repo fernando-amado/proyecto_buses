@@ -1,9 +1,9 @@
-<?php require "../conexiones/header.php" ?>
+<?php require "../../conexiones/header.php" ?>
 <body>
     
 <div class="container">
 		
-			<h2>Buses</h2>
+			<h2>Conductor</h2>
 			<div class="col-sm-12">
 					</div>
 					<div class="card-body">
@@ -25,8 +25,11 @@
 			</div>
 		</div>
 	</div>
-    </div>
+    </div>  
 
     <?php require_once "registrar.php" ?>
-    
+    <script src="js/functions.js"></script>
 </body>
+</html>
+
+
