@@ -42,6 +42,7 @@
 	<link rel="icon" type="image/png" href="../../images/favicon.ico" />
 	<link rel="stylesheet" href="../../css/estilos-menu.css" media="screen, projection" type="text/css" />
 	<link rel="stylesheet" href="../../css/style_icons.css" media="screen, projection" type="text/css" />
+	<link rel="stylesheet" href="../../css/styles.css">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 </head>
@@ -64,7 +65,10 @@
 			<?php
 				include_once $view_form;
 			?>
+
 		</section>
 	</div>
+	<?php require_once "registrar.php" ?>
+
 </body>
 </html>

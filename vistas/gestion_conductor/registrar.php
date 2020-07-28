@@ -1,60 +1,53 @@
-<head>
-    <title>Nuevo Conductor</title>
-</head>
-<?php
-include_once '../conexiones/header.php';
-
-?>
-<h1 class="page-header">NUEVO CONDUCTOR</h1>
-<div class="well well-sm text-right">
-    <a class="btn btn-light" href="aprendices.php">Regresar</a>
-
+<div class="modal fade" id="insertarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+     
+      <div class="modal">
+        <h4 id="exampleModalLabel"></h4>
+        
+          <span aria-hidden="true">&times;</span>
+       
+      </div>
+      </div>
+    
+      <form class="form1" action="respuesta.php" method="post">
+      <div class="titulo">
+         <h1>Registro Conductor</h1>
+      </div>
+           <br><div class="one-half ">
+              <input type="text" id="nombre" name="nombre" required=""><span class="barra"></span>
+              <label>Nombre del Conductor </label>
+            </div>  
+            <div class="one-half last ">
+              <input type="text" id="apellido" name="apellido"  required=""><span class="barra"></span>
+              <label>Apellidos del Conductor </label>
+            </div> 
+            <div class="one-half ">
+              <input type="text" id="documento" name="documento"  required=""><span class="barra"></span>
+              <label>Documento del Conductor </label>
+            </div>  
+            <div class="one-half last"> 
+              <input type="text" id="documento" name="documento"  required=""><span class="barra"></span>
+              <label>Telefono </label>
+            </div>  
+            <div class="one-half "> 
+              <input type="text" id="correo" name="correo"  required=""><span class="barra"></span>
+              <label>Correo del Conductor </label>
+            </div> 
+            <div class="one-half ">
+              <input type="text" id="direccion" name="direccion"  required=""><span class="barra"></span>
+              <label >Direccion del Conductor</label>             
+            </div> 
+            
+              <br>
+               <input class="reset" type="reset" value="Resetear" >
+               <input class="boton" type="submit" value="Guardar" >  
+      </div>
+          </form>
+    </div>      
+      
+      </div>  
+        
+     
+    </div>
+  </div>
 </div>
-<form  action="respuesta.php"  method="POST" class="needs-validation" novalidate>
-    <div class="form-group">
-      <label for="nombre">Nombre</label>
-      <input type="text" class="form-control"   name="nombre" placeholder="Ingrese el nombre del autor"  required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="apellido">Apellidos</label>
-      <input type="password" class="form-control"  name="apellido" placeholder="Enter password" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="documento">Documento</label>
-      <input type="password" class="form-control"  name="documento" placeholder="Enter password" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="tel">Telefono:</label>
-      <input type="text" class="form-control"   name="tel" placeholder="Ingrese el nombre del autor" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="correo" >Correo:</label>
-      <input type="text" class="form-control"   name="correo" placeholder="Ingrese el nombre del autor" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="dir" >Direccion:</label>
-      <input type="text" class="form-control"   name="dir" placeholder="Ingrese el nombre del autor" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <div class="form-group">
-      <label for="usuario" >usuario:</label>
-      <input type="text" class="form-control"   name="usuario" placeholder="Ingrese el nombre del autor" required >
-      <div class="invalid-feedback">Complete el campo.</div>
-    </div>
-    <hr>
-    <div class=" text-right">
-    <button type="submit" class="btn btn2 ">Guardar</button>
-    </div>
-
-   
-
-  </form>
-  
-  <?php include_once'../conexiones/footer.php';?> 
-
-

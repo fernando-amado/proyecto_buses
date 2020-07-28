@@ -48,9 +48,9 @@ if ($var_resultado->num_rows > 0) { ?>
 
 <div class="form-options">
 	<div class="options">
-		<form action="#" method="POST">
-			<button class="btn icon icon-plus" name="btn" value="form_add" type="submit"></button>
-		</form>
+		
+			<span class="btn icon icon-plus" data-toggle="modal" data-target="#insertarModal"></span>
+		
 		<form action="#" method="POST">
 			<button class="btn disabled icon icon-coding" name="btn" value="form_coding" type="submit" disabled></button>
 		</form>
@@ -72,8 +72,6 @@ if ($var_resultado->num_rows > 0) { ?>
 	</div>
 </div>
 </div>
-<?php
-	include_once 'msgbox_info.php';
-?>
+
 <?php }?>
 <?php }?>
