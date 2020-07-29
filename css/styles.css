@@ -199,7 +199,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     cursor: pointer;
     position: absolute;
     left: 65%; 
-    top: 79%;   
+    top: 326px;   
 }
 
 .boton:hover{
@@ -223,7 +223,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     margin: 10px auto;
     cursor: pointer;
     position: absolute;
-    top: 400px;
+    top: 397px;
     left: 65%; 
        
 }
