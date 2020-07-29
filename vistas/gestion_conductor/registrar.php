@@ -10,10 +10,14 @@
       </div>
     
       <form class="form1" action="respuesta.php" method="post">
+<<<<<<< HEAD
 
       <div class="title">
       <div class="titulo">
 
+=======
+      <div class="title">
+>>>>>>> 2632907da599d2471a6cad181f348deedaa1ef81
          <h1>Registro Conductor</h1>
       </div>
            <br><div class="one-half ">
@@ -29,7 +33,10 @@
               <label>Documento del Conductor </label>
             </div>  
             <div class="one-half last"> 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2632907da599d2471a6cad181f348deedaa1ef81
               <input type="text" id="telefono" name="telefono"  required=""><span class="barra"></span>
               <label>Telefono </label>
             </div>  
@@ -38,9 +45,12 @@
               <label>Correo del Conductor </label>
             </div> 
             <div class="one-half last">
+<<<<<<< HEAD
 
             <div class="one-half ">
 
+=======
+>>>>>>> 2632907da599d2471a6cad181f348deedaa1ef81
               <input type="text" id="direccion" name="direccion"  required=""><span class="barra"></span>
               <label >Direccion del Conductor</label>             
             </div> 

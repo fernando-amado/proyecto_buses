@@ -12,6 +12,7 @@ if ($var_resultado->num_rows > 0) { ?>
 			
 			<th>lugar de Partida</th>
 			<th>Lugar de Destino</th>
+			<th>Lugar de Destino</th>
 			<th>Hora de Partida</th>
 			<th>Hora de Llegada</th>
 			<th class="edit center"><a class="icon icon-edit"></a></th>
@@ -23,10 +24,11 @@ if ($var_resultado->num_rows > 0) { ?>
 			
 	    	
 		    		<tr>
-						<td><?php echo $var_dato['lugarpartida']; ?></td>
-						<td><?php echo $var_dato['lugardestino']; ?></td>
-						<td><?php echo $var_dato['horapartida']; ?></td>
-						<td><?php echo $var_dato['horallegada']; ?></td>
+						<td><?php echo $var_dato['lugar_partida']; ?></td>
+						<td><?php echo $var_dato['lugar_destino']; ?></td>
+						<td><?php echo $var_dato['id_bus']; ?></td>
+						<td><?php echo $var_dato['hora_partida']; ?></td>
+						<td><?php echo $var_dato['hora_llegada']; ?></td>
 						<td>
 							
 								<input style="display:none;" type="text" name="id" >

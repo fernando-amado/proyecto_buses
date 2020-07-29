@@ -9,7 +9,7 @@
 	<ul class="second">
 		
 		<li><a href="../gestion_conductor/">Conductores</a></li>
-		<li><a  href="../gestion_vontrato/">Rutas</a></li>
+		<li><a  href="../gestion_contrato/">Contratos</a></li>
 		
 	</ul>
 	<ul class="last">

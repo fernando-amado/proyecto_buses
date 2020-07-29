@@ -1,7 +1,7 @@
 <?php
 include_once '../../conexiones/header.php';
 $id= $_GET["id"];
-$aprendiz = "SELECT * FROM conductor WHERE id_conductor='$id'";
+$aprendiz = "SELECT * FROM usuario WHERE id_usuario='$id'";
 
 ?>
 

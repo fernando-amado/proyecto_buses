@@ -31,14 +31,14 @@
 					<td>
 
 					<input style="display:none;" type="text" name="id">
-					<button class="btnview" data-toggle="modal" data-target="#consultarModal" href="consultar.php?id=<?php echo $var_dato["id_conductor"]; ?>"></button>
+					<button class="btnview" data-toggle="modal" data-target="#Modal" href="actualizar.php?id=<?php echo $var_dato["id_conductor"]; ?>"></button>
 						</a>
 
 					</td>
 					<td>
 
 						<input style="display:none;" type="text" name="id">
-						<button class="btnedit" data-toggle="modal" data-target="#actualizarModal?id=<?php echo $var_dato["id_conductor"]; ?>" href="actualizar.php?id=<?php echo $var_dato["id_conductor"]; ?>"></button>
+						<button class="btnedit" data-toggle="modal" data-target="#actualizarModal" href="actualizar.php?id=<?php echo $var_dato["id_conductor"]; ?>"></button>
 
 					</td>
 					<td>

@@ -31,7 +31,7 @@
 	</div>
 	<?php require_once "registrar.php" ?>
 	<?php require_once "actualizar.php" ?>
-	<?php require_once "consultar.php" ?>
+	
 
 </body>
 </html>
