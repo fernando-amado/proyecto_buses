@@ -69,6 +69,10 @@
 		</section>
 	</div>
 	<?php require_once "registrar.php" ?>
+<<<<<<< HEAD
     <?php require_once "actualizar.php" ?>
+=======
+
+>>>>>>> c2686eee28e5bf5a5efc9c83ab010bd1ccc0f0b8
 </body>
 </html>
