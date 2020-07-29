@@ -1,19 +1,17 @@
 
 <div class="form-load">
 	<div class="head">
-		<h1 class="titulo">Rutas </h1>
+		<h1 class="titulo">Usuarios</h1>
 	</div>
 	<?php
-$var_consulta = 'SELECT * FROM conductor';
+$var_consulta = 'SELECT * FROM usuario';
 $var_resultado = $obj_conexion->query($var_consulta);
 if ($var_resultado->num_rows > 0) { ?>
 	<table>
 		<tr>
-			
-			<th>lugar de Partida</th>
-			<th>Lugar de Destino</th>
-			<th>Hora de Partida</th>
-			<th>Hora de Llegada</th>
+			<th>Nombre usuario</th>
+			<th>Contraseña</th>
+			<th>Rol</th>
 			<th class="edit center"><a class="icon icon-edit"></a></th>
 			<th class="delete center"><a class="icon icon-trash"></a></th>
     	</tr>
@@ -21,16 +19,16 @@ if ($var_resultado->num_rows > 0) { ?>
 			 while ($var_dato = $var_resultado->fetch_array()) { ?>
 
 			
-	    	
+
 		    		<tr>
-						<td><?php echo $var_dato['lugarpartida']; ?></td>
-						<td><?php echo $var_dato['lugardestino']; ?></td>
-						<td><?php echo $var_dato['horapartida']; ?></td>
-						<td><?php echo $var_dato['horallegada']; ?></td>
+						<td><?php echo $var_dato['nombre_usuario']; ?></td>
+						<td><?php echo $var_dato['contrasena']; ?></td>
+						<td><?php echo $var_dato['id_rol']; ?></td>
 						<td>
 							
 								<input style="display:none;" type="text" name="id" >
-								<button class="btnedit" data-toggle="modal" data-target="#actualizarModal"></button>
+								<input style="display:none;" type="text" name="id" >
+								<button class="btnedit" data-toggle="modal" data-target="#actualizarModal" href="actualizar.php?id=<?php echo $var_dato["id_conductor"];?>"></button>
 							
 						</td>
 						<td>
@@ -41,9 +39,10 @@ if ($var_resultado->num_rows > 0) { ?>
 							
 						</td>
 					</tr>
-			
+					<?php }?>
+<?php }?>
 	</table>
-		
+	
 	<div class="pages">
 		
 	</div>
@@ -76,5 +75,3 @@ if ($var_resultado->num_rows > 0) { ?>
 </div>
 </div>
 
-<?php }?>
-<?php }?>

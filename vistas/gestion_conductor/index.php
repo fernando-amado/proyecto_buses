@@ -1,78 +1,37 @@
-<?php
-	session_start();
-	$usuario=$_SESSION['rol'];
-	include_once '../../conexiones/header.php';
-
-	//Permisos de administrador
-
-
-	// Formulario actual
-	if (!empty($_POST['btn']))
-	{
-		$view_form = $_POST['btn'].'.php';
-	}
-	else
-	{
-		$view_form = 'form_default.php';
-	}
-
-	// Pagina actual
-	if (!empty($_POST['page']))
-	{
-		$page = $_POST['page'];
-	}
-	else
-	{
-		$page = 1;
-	}
-	
-	// Numero de registros a visualizar
-	$max = 50;
-	$inicio = ($page - 1) * $max;
-
-	// Cargar datos de usuarios
-	
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-	<title>Usuarios | Sistema Escolar</title>
-	<link rel="icon" type="image/png" href="../../images/favicon.ico" />
-	<link rel="stylesheet" href="../../css/estilos-menu.css" media="screen, projection" type="text/css" />
-	<link rel="stylesheet" href="../../css/style_icons.css" media="screen, projection" type="text/css" />
-	<link rel="stylesheet" href="../../css/styles.css">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<?php
-				include_once "../secciones/about-user.php";
-			?>
-		</header>
+<?php include_once"../secciones/header.php"?>
 		<aside>
-			<?php
-				
-				
-					include_once "../secciones/administrador.php";
-				
-			?>
+		<div class="nav-admin-home">
+	<img class="image_user" src="../../img/avatar2.png" />
+	<span class="name_user"><?php print $_SESSION['nombre_usuario'];?></span>
+	<ul class="first">
+	<li><a  href="../gestion_usuario">Usuarios</a></li>
+	</ul>
+	<ul class="second">
+		
+		<li><a class="active" href="#">Conductores</a></li>
+		<li><a  href="../gestion_contrato/">Contratos</a></li>
+		
+		
+	</ul>
+	<ul class="last">
+		<li><a  href="../gestion_bus/index.php">Buses</a></li>
+		<li><a  href="../gestion_ruta/index.php">Rutas</a></li>
+	</ul>
+	<ul class="last">
+		<li><a  class="<?php if($output[1] == 'assists'){ echo 'active'; } ?>" href="/modules/assists">Asistencias</a></li>
+	</ul>
+</div>
 		</aside>
 		<section class="content">
 			<?php
-				include_once $view_form;
+				include_once "conductor.php";
 			?>
 
 		</section>
 	</div>
 	<?php require_once "registrar.php" ?>
-<<<<<<< HEAD
-    <?php require_once "actualizar.php" ?>
-=======
+	<?php require_once "actualizar.php" ?>
+	<?php require_once "consultar.php" ?>
 
->>>>>>> c2686eee28e5bf5a5efc9c83ab010bd1ccc0f0b8
 </body>
 </html>

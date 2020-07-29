@@ -4,18 +4,17 @@
 	<img class="image_user" src="../../img/avatar2.png" />
 	<span class="name_user"><?php print $_SESSION['nombre_usuario'];?></span>
 	<ul class="first">
-	<li><a  href="../gestion_usuario">Usuarios</a></li>
+	<li><a class="active" href="#">Usuarios</a></li>
 	</ul>
 	<ul class="second">
 		
-		<li><a  href="../gestion_conductor/">Conductores</a></li>
-		<li><a  href="../gestion_contrato/">Contratos</a></li>
+		<li><a  href="../gestion_conductor/index.php">Conductores</a></li>
 		
-		
+		<li><a  href="../gestion_ruta/index.php">Rutas</a></li>
 	</ul>
 	<ul class="last">
-	<li><a  href="../gestion_bus/">Buses</a></li>
-		<li><a class="active"  href="#">Rutas</a></li>
+		<li><a class="<?php if($output[1] == 'subjects'){ echo 'active'; } ?>" href="/modules/subjects">Materias</a></li>
+		<li><a class="<?php if($output[1] == 'groups'){ echo 'active'; } ?>" href="/modules/groups">Grupos</a></li>
 	</ul>
 	<ul class="last">
 		<li><a  class="<?php if($output[1] == 'assists'){ echo 'active'; } ?>" href="/modules/assists">Asistencias</a></li>
@@ -24,7 +23,7 @@
 		</aside>
 		<section class="content">
 			<?php
-				include_once "conductor.php";
+				include_once "form_default.php";
 			?>
 
 		</section>
