@@ -10,9 +10,9 @@ var exito = new String("Datos guardados exitosamente");
 $nombre= $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $documento = $_POST['documento'];
-$telefono = $_POST['telefono'];
+$telefono = $_POST['tel'];
 $correo = $_POST['correo'];
-$direccion = $_POST['direccion'];
+$direccion = $_POST['dir'];
 $usuario=$_POST['usuario'];
 $insertar ="INSERT INTO conductor ( id_conductor,nombre,apellidos, documento,  telefono, correo, direccion, id_usuario) 
 VALUES ( NULL,'$nombre', '$apellido', '$documento', '$telefono', '$correo','$direccion',  '$usuario')"; 

@@ -8,7 +8,7 @@
 	<ul class="second">
 		<li><a class="active" href="vistas/gestion_conductor/index.php">Usuarios</a></li>
 		<li><a class="<?php if($output[1] == 'administratives'){ echo 'active'; } ?>" href="/modules/administratives">Administrativos</a></li>
-		<li><a class="<?php if($output[1] == 'teachers'){ echo 'active'; } ?>" href="/modules/teachers">Docentes</a></li>
+		<li><a class="<?php if($output[1] == 'teachers'){ echo 'active'; } ?>" href="../gestion_bus/index.php">Docentes</a></li>
 		<li><a class="<?php if($output[1] == 'students'){ echo 'active'; } ?>" href="/modules/students">Alumnos</a></li>
 	</ul>
 	<ul class="last">

@@ -28,14 +28,14 @@ if ($var_resultado->num_rows > 0) { ?>
 							
 								<input style="display:none;" type="text" name="id" >
 								<button class="btnedit" data-toggle="modal" data-target="#actualizarModal"></button>
-						
+							
 						</td>
 						<td>
-							<form action="#" method="POST">
+							
 								<input style="display:none;" type="text" name="id" >
 								<input style="display:none;" type="text" name="userimage" >
-								<button class="btndelete" name="btn" value="form_delete" type="submit"></button>
-							</form>
+								<button class="btndelete" ></button>
+							
 						</td>
 					</tr>
 			

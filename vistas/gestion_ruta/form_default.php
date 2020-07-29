@@ -1,7 +1,7 @@
 
 <div class="form-load">
 	<div class="head">
-		<h1 class="titulo">Usuarios</h1>
+		<h1 class="titulo">Rutas </h1>
 	</div>
 	<?php
 $var_consulta = 'SELECT * FROM conductor';
@@ -9,9 +9,11 @@ $var_resultado = $obj_conexion->query($var_consulta);
 if ($var_resultado->num_rows > 0) { ?>
 	<table>
 		<tr>
-			<th>Usuario</th>
-			<th>Permisos</th>
-			<th>Imagen</th>
+			
+			<th>lugar de Partida</th>
+			<th>Lugar de Destino</th>
+			<th>Hora de Partida</th>
+			<th>Hora de Llegada</th>
 			<th class="edit center"><a class="icon icon-edit"></a></th>
 			<th class="delete center"><a class="icon icon-trash"></a></th>
     	</tr>
@@ -21,21 +23,22 @@ if ($var_resultado->num_rows > 0) { ?>
 			
 	    	
 		    		<tr>
-						<td><?php echo $var_dato['nombre']; ?></td>
-						<td><?php echo $var_dato['apellidos']; ?></td>
-						<td><?php echo $var_dato['documento']; ?></td>
+						<td><?php echo $var_dato['lugarpartida']; ?></td>
+						<td><?php echo $var_dato['lugardestino']; ?></td>
+						<td><?php echo $var_dato['horapartida']; ?></td>
+						<td><?php echo $var_dato['horallegada']; ?></td>
 						<td>
 							
 								<input style="display:none;" type="text" name="id" >
 								<button class="btnedit" data-toggle="modal" data-target="#actualizarModal"></button>
-						
+							
 						</td>
 						<td>
-							<form action="#" method="POST">
+							
 								<input style="display:none;" type="text" name="id" >
 								<input style="display:none;" type="text" name="userimage" >
-								<button class="btndelete" name="btn" value="form_delete" type="submit"></button>
-							</form>
+								<button class="btndelete" ></button>
+							
 						</td>
 					</tr>
 			
