@@ -1,3 +1,5 @@
+<?php include_once "index.php"; ?>
+
 <div class="modal fade" id="insertarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
      
@@ -16,7 +18,10 @@
 
          <h1>Registro Usuario</h1>
       </div>
-           <br><div class="one-half ">
+           <br>
+           <br>
+           <br>
+           <div class="one-half ">
               <input type="text" id="nombreU" name="nombreU" required=""><span class="barra"></span>
               <label>Nombre de usuario </label>
             </div>  
@@ -30,8 +35,10 @@
             </div>  
               <br>
                <input class="reset" type="reset" value="Resetear" >
-               <input class="boton2" type="submit" value="Guardar" >  
+                 
       </div>
+      <input class="boton2" type="submit" value="Guardar" >
+      <input class="boton2" type="submit" value="Resetear" >
           </form>
     </div>      
       
@@ -41,3 +48,4 @@
     </div>
   </div>
 </div>
+

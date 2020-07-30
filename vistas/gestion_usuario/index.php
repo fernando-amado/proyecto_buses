@@ -8,28 +8,27 @@
 	</ul>
 	<ul class="second">
 		
-		<li><a  href="../gestion_conductor/index.php">Conductores</a></li>
-		
-		<li><a  href="../gestion_ruta/index.php">Rutas</a></li>
+	<li><a href="../gestion_conductor/">Conductores</a></li>
+		<li><a  href="../gestion_contrato/">Contratos</a></li>
 	</ul>
 	<ul class="last">
-		<li><a class="<?php if($output[1] == 'subjects'){ echo 'active'; } ?>" href="/modules/subjects">Materias</a></li>
-		<li><a class="<?php if($output[1] == 'groups'){ echo 'active'; } ?>" href="/modules/groups">Grupos</a></li>
+	<li><a  href="../gestion_bus/">buses</a></li>
+	<li><a  href="../gestion_ruta/">Rutas</a></li>
+
 	</ul>
-	<ul class="last">
-		<li><a  class="<?php if($output[1] == 'assists'){ echo 'active'; } ?>" href="/modules/assists">Asistencias</a></li>
-	</ul>
+	
 </div>
 		</aside>
 		<section class="content">
 			<?php
-				include_once "form_default.php";
+				include_once "usuario.php";
 			?>
 
 		</section>
+		
 	</div>
-	<?php require_once "registrar.php" ?>
-	<?php require_once "actualizar.php" ?>
+
+	
 
 </body>
 </html>

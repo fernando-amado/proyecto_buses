@@ -8,7 +8,7 @@
        
       </div>
       </div>
-      <form class="form2" id="frminsert" action="" method="post">
+      <form class="form2" id="frminsert" action="respuesta.php" method="post">
       <div class="title">
          <h1>Registro Bus</h1>
       </div>
@@ -34,8 +34,8 @@
               <label>Empresa del Bus: </label>
             </div> 
             <div class="one-half last"> 
-              <input type="text" id="km" name="km"  required=""><span class="barra"></span>
-              <label>Kilometraje </label>
+              <input type="text" id="id_conductor" name="id_conductor"  required=""><span class="barra"></span>
+              <label>Id Conductor </label>
             </div> 
               <br>
                <input class="reset" type="reset" value="Resetear" >

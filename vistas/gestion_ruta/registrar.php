@@ -17,19 +17,19 @@
            <img src="../../img/1.png" alt="" position ="relative"  height="110px" width="740px">
            </div>
           <br><br><br><br><br><div class="one-half ">
-              <input type="text" id="lugarpartida" name="lugarpartida" required=""><span class="barra"></span>
+              <input type="text" id="lugar_partida" name="lugar_partida" required=""><span class="barra"></span>
               <label>Lugar de Partida</label>
             </div>  
             <div class="one-half last ">
-              <input type="text" id="lugardestino" name="lugardestino"  required=""><span class="barra"></span>
+              <input type="text" id="lugar_destino" name="lugar_destino"  required=""><span class="barra"></span>
               <label>lugar de Destino </label>
             </div> 
             <div class="one-half ">
-              <input type="text" id="horapartida" name="horapartida" required=""><span class="barra"></span>
+              <input type="text" id="hora_partida" name="hora_partida" required=""><span class="barra"></span>
               <label>Lugar de Partida</label>
             </div>  
             <div class="one-half last ">
-              <input type="text" id="horallegada" name="horallegada"  required=""><span class="barra"></span>
+              <input type="text" id="hora_llegada" name="hora_llegada"  required=""><span class="barra"></span>
               <label>lugar de Destino </label>
             </div>
             

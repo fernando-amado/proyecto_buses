@@ -17,9 +17,7 @@
 		<li><a  href="../gestion_bus/index.php">Buses</a></li>
 		<li><a  href="../gestion_ruta/index.php">Rutas</a></li>
 	</ul>
-	<ul class="last">
-		<li><a  class="<?php if($output[1] == 'assists'){ echo 'active'; } ?>" href="/modules/assists">Asistencias</a></li>
-	</ul>
+	
 </div>
 		</aside>
 		<section class="content">
@@ -29,8 +27,7 @@
 
 		</section>
 	</div>
-	<?php require_once "registrar.php" ?>
-	<?php require_once "actualizar.php" ?>
+	
 	
 
 </body>

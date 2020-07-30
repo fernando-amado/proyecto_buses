@@ -24,7 +24,7 @@
 		</aside>
 		<section class="content">
 			<?php
-				include_once "conductor.php";
+				include_once "Ruta.php";
 			?>
 
 		</section>

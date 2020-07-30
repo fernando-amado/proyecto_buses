@@ -58,8 +58,7 @@ if ($var_resultado->num_rows > 0) { ?>
               <label>Nombre de usuario </label>
             </div> 
               <br>
-               <input class="reset" type="reset" value="Resetear" >
-               <input class="boton2" type="submit" value="Guardar" >  
+                
       </div>
 		  </form>
 	<?php }?>
