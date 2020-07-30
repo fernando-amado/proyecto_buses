@@ -16,7 +16,7 @@ $usuario = "SELECT * FROM usuario WHERE id_usuario='$id'";
       </div>
       </div>
     
-      <form class="form1" action="respuesta-editar.php" method="post">
+      <form class="form3" action="respuesta-editar.php" method="post">
 
       <div class="title">
       <div class="titulo">
@@ -30,7 +30,7 @@ $usuario = "SELECT * FROM usuario WHERE id_usuario='$id'";
       while($var_dato=mysqli_fetch_assoc($var_resultado)) {
       ?> 
       <input type="hidden" class="form-control" value="<?php echo $var_dato["id_usuario"];?>"  name="id"  >
-           <div class="one-half ">
+          <br><div class="one-half ">
               <input type="text" id="nombreU" name="nombreU" value="<?php echo $var_dato["nombre_usuario"];?>"  required=""><span class="barra"></span>
               <label>Nombre de usuario </label>
             </div>  
@@ -42,9 +42,10 @@ $usuario = "SELECT * FROM usuario WHERE id_usuario='$id'";
               <input type="text" id="rol" name="rol" value="<?php echo $var_dato["id_rol"];?>" required=""><span class="barra"></span>
               <label>Rol </label>
             <br>
+            <a class="reset1" href="index.php">Salir del Formulario</a>
             <?php } mysqli_free_result($var_resultado);?>
-      <input class="boton2" type="submit" value="Guardar" >
-      <input class="boton2" type="submit" value="Resetear" >
+      <input class="boton1" type="submit" value="Guardar" >
+      
           </form>
     </div>      
       
