@@ -8,7 +8,7 @@
 .form1{
     background: #fff;
     width: 740px;
-    height: 480px;
+    height: 380px;
     padding: 10px 0;
     border-radius: 10px;
     align-items: center;
@@ -35,7 +35,7 @@
 .form3{
     background: #fff;
     width: 740px;
-    height: 290px;
+    height: 275px;
     font-family: Verdana;
     padding: 10px 0;
     border-radius: 10px;
@@ -51,6 +51,19 @@
     background: #fff;
     width: 740px;
     height: 430px;
+    padding: 10px 0;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 9px 0 #0586F9;
+    position: absolute;
+    left: 430px;
+    top: 100px;
+}
+
+.form5{
+    background: #fff;
+    width: 740px;
+    height: 310px;
     padding: 10px 0;
     border-radius: 10px;
     align-items: center;
@@ -168,8 +181,8 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     font-size: 16px;
     margin: 10px auto;
     position: absolute;
-    top: 230px;
-    left: 52%;
+    top: 215px;
+    left: 54%;
     cursor: pointer;
    
 }
@@ -240,6 +253,123 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     transition: all 0.2s ease;
 }
 
+.reset3{
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: whitesmoke;
+    color:  #2B32B2;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    position: absolute;
+    top: 245px;
+    left: 52%;
+    cursor: pointer;
+   
+}
+
+.reset3:hover{
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color:  whitesmoke;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgb(28, 29, 29);
+    transition: all 0.2s ease;
+}
+
+.reset4{
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: whitesmoke;
+    color:  #2B32B2;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    position: absolute;
+    top: 315px;
+    left: 52%;
+    cursor: pointer;
+   
+}
+
+.reset4:hover{
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color:  whitesmoke;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgb(28, 29, 29);
+    transition: all 0.2s ease;
+}
+
+.reset5{
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: whitesmoke;
+    color:  #2B32B2;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    position: absolute;
+    top: 370px;
+    left: 52%;
+    cursor: pointer;
+   
+}
+
+.reset5:hover{
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color:  whitesmoke;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgb(28, 29, 29);
+    transition: all 0.2s ease;
+}
+
+.reset6{
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: whitesmoke;
+    color:  #2B32B2;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    position: absolute;
+    top: 380px;
+    left: 52%;
+    cursor: pointer;
+   
+}
+
+.reset6:hover{
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color:  whitesmoke;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgb(28, 29, 29);
+    transition: all 0.2s ease;
+}
+
+
 
 
 .boton1{
@@ -279,8 +409,8 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     margin: 10px auto;
     cursor: pointer;
     position: absolute;
-    left: 75%; 
-    top: 230px;   
+    left: 77%; 
+    top: 215px;   
 }
 
 .boton2:hover{
@@ -291,6 +421,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     box-shadow: 0 4px 16px #1488CC;
     transition: all 0.2s ease;
 }
+
 .boton3{
     background:linear-gradient(to right, #2B32B2, #1488CC);
     display: block;
@@ -316,10 +447,10 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     transition: all 0.2s ease;
 }
 
-.actualizar{
+.boton4{
     background:linear-gradient(to right, #2B32B2, #1488CC);
     display: block;
-    width: 200px;
+    width: 150px;
     height: 40px;
     border:none;
     color:#fff; 
@@ -328,12 +459,11 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     margin: 10px auto;
     cursor: pointer;
     position: absolute;
-    top: 255px;
-    left: 65%; 
-       
+    left: 75%; 
+    top: 245px;   
 }
 
-.actualizar:hover{
+.boton4:hover{
     background: whitesmoke;
     color:  #2B32B2;
     font-size: 16px;
@@ -341,6 +471,82 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     box-shadow: 0 4px 16px #1488CC;
     transition: all 0.2s ease;
 }
+
+.boton5{
+    background:linear-gradient(to right, #2B32B2, #1488CC);
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    position: absolute;
+    left: 75%; 
+    top: 315px;   
+}
+
+.boton5:hover{
+    background: whitesmoke;
+    color:  #2B32B2;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px #1488CC;
+    transition: all 0.2s ease;
+}
+
+.boton6{
+    background:linear-gradient(to right, #2B32B2, #1488CC);
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    position: absolute;
+    left: 75%; 
+    top: 370px;   
+}
+
+.boton6:hover{
+    background: whitesmoke;
+    color:  #2B32B2;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px #1488CC;
+    transition: all 0.2s ease;
+}
+
+.boton7{
+    background:linear-gradient(to right, #2B32B2, #1488CC);
+    display: block;
+    width: 150px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    position: absolute;
+    left: 75%; 
+    top: 380px;   
+}
+
+.boton7:hover{
+    background: whitesmoke;
+    color:  #2B32B2;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px #1488CC;
+    transition: all 0.2s ease;
+}
+
 
 .ruta{
     height: 30px;

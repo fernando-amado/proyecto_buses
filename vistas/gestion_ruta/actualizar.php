@@ -18,9 +18,9 @@ include_once'index.php';
         <h1>Modificar ruta</h1>
      </div>
      <div class="ruta">
-           <img src="../../img/1.png" alt="" position ="relative"  height="110px" width="740px">
+           <img src="../../img/1.png" alt="" position ="relative"  height="120px" width="740px">
            </div>
-          <br><br><br><br><br><div class="one-half ">
+          <br><br><br><br><br><br><div class="one-half ">
               <input type="text" id="lugarpartida" name="lugarpartida" required=""><span class="barra"></span>
               <label>Lugar de Partida</label>
             </div>  
@@ -36,9 +36,10 @@ include_once'index.php';
               <input type="text" id="horallegada" name="horallegada"  required=""><span class="barra"></span>
               <label>Hora de llegada </label>
             </div> 
+            <a class="reset5" href="index.php">Salir del Formulario</a> 
              <br>
-              <input class="reset" type="reset" value="Restaurar" >
-              <input class="boton3" type="submit" value="Actualizar" >  
+             
+              <input class="boton6" type="submit" value="Actualizar" >  
      </div>
          </form>
      

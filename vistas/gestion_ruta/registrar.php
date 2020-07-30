@@ -41,10 +41,10 @@ include_once'index.php';
               <input type="text" id="hora_llegada" name="hora_llegada"  required=""><span class="barra"></span>
               <label>Hora de llegada </label>
             </div>
-            
+            <a class="reset6" href="index.php">Salir del Formulario</a>
               <br>
-               <input class="reset" type="reset" value="Resetear" >
-               <input class="boton3" type="submit" value="Guardar" >  
+               
+               <input class="boton7" type="submit" value="Guardar" >  
       </div>
           </form>
      </div>

@@ -17,7 +17,7 @@ $bus = "SELECT * FROM bus WHERE id_bus='$id'";
      </div>
      </div>
     
-     <form class="form3" action="respuesta-editar.php"  method="post">
+     <form class="form5" action="respuesta-editar.php"  method="post">
      <div class="title">
         <h1>Modificar Bus</h1>
      </div>
@@ -43,10 +43,11 @@ $bus = "SELECT * FROM bus WHERE id_bus='$id'";
              <input type="text" id="id_conductor" name="id_conductor"  value="<?php echo $var_dato["id_conductor"];?>" required=""><span class="barra"></span>
              <label>Id conductor </label>
            </div> 
+           <a class="reset3" href="index.php">Salir del Formulario</a> 
            <?php } mysqli_free_result($var_resultado);?>
              <br>
-              <input class="reset" type="reset" value="Restaurar" >
-              <input class="actualizar" type="submit" value="Actualizar" >  
+              
+              <input class="boton4" type="submit" value="Actualizar" >  
      </div>
          </form>
     

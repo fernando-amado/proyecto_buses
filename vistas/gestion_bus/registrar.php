@@ -12,7 +12,7 @@ include_once'index.php';
        
       </div>
       </div>
-      <form class="form2" id="frminsert" action="respuesta.php" method="post">
+      <form class="form1" id="frminsert" action="respuesta.php" method="post">
       <div class="title">
          <h1>Registro Bus</h1>
       </div>
@@ -41,9 +41,9 @@ include_once'index.php';
               <input type="text" id="id_conductor" name="id_conductor"  required=""><span class="barra"></span>
               <label>Id Conductor </label>
             </div> 
+            <a class="reset4" href="index.php">Salir del Formulario</a> 
               <br>
-               <input class="reset" type="reset" value="Resetear" >
-               <input class="boton" type="submit" value="Guardar" >  
+               <input class="boton5" type="submit" value="Guardar" >  
       </div>
           </form>
       
