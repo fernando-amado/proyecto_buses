@@ -12,13 +12,14 @@ include_once 'index.php';
       </div>
       </div>
     
-      <form class="form1" action="respuesta.php" method="post">
+      <form class="form2" action="respuesta.php" method="post">
 
       <div class="title">
       <div class="titulo">
 
          <h1>Registro Conductor</h1>
       </div>
+           <br>
            <br>
            <br>
            <br>
@@ -51,10 +52,10 @@ include_once 'index.php';
               <label>Id Usuario </label>
             </div>
            
-
+  
               <br>
-              
-               <input class="boton" type="submit" value="Guardar" > 
+              <a class="reset2" href="index.php">Salir del Formulario</a>
+               <input class="boton3" type="submit" value="Guardar" > 
                      
       </div>
        

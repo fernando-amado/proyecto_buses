@@ -22,7 +22,7 @@ include_once 'index.php';
       </div>
       </div>
     
-      <form class="form1" action="respuesta-editar.php" method="post">
+      <form class="form2" action="respuesta-editar.php" method="post">
 
       <div class="title">
       <div class="titulo">
@@ -65,11 +65,11 @@ include_once 'index.php';
               <input type="text" id="id_usuario" name="id_usuario" value="<?php echo $var_dato["id_usuario"];?>" required=""><span class="barra"></span>
               <label>Id Usuario </label>
             </div>
-           
-
+             
+            <a class="reset2" href="index.php">Salir del Formulario</a> 
               <br>
               <?php } mysqli_free_result($var_resultado);?>
-               <input class="boton" type="submit" value="Guardar" > 
+               <input class="boton3" type="submit" value="Guardar" > 
                      
       </div>
        

@@ -11,7 +11,7 @@
       </div>
       </div>
     
-      <form class="form1" action="respuesta.php" method="post">
+      <form class="form3" action="respuesta.php" method="post">
 
       <div class="title">
       <div class="titulo">
@@ -20,8 +20,8 @@
       </div>
            <br>
            <br>
-           <br>
-           <div class="one-half ">
+           
+           <br><br><div class="one-half ">
               <input type="text" id="nombreU" name="nombreU" required=""><span class="barra"></span>
               <label>Nombre de usuario </label>
             </div>  
@@ -34,11 +34,12 @@
               <label>Rol </label>
             </div>  
               <br>
-               <input class="reset" type="reset" value="Resetear" >
-                 
+              
+              <a class="reset" href="index.php">Salir del Formulario</a>     
       </div>
+      
       <input class="boton2" type="submit" value="Guardar" >
-      <input class="boton2" type="submit" value="Resetear" >
+     
           </form>
     </div>      
       
