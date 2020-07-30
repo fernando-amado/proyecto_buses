@@ -2,77 +2,83 @@
 <?php 
 
 include_once '../secciones/header.php';
+include_once 'index.php';
 $id= $_GET["id"];
 $conductor = "SELECT * FROM conductor WHERE id_conductor='$id'";
 
 ?>
 
-<div class="modal fade" id="actualizarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
+<?php include_once '../secciones/header.php';
+include_once 'index.php';
+?>
+<div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
      
-     <div class="modal">
-       <h4 id="exampleModalLabel"></h4>
+      <div class="modal">
+        <h4 id="exampleModalLabel"></h4>
+        
+          <span aria-hidden="true">&times;</span>
        
-         <span aria-hidden="true">&times;</span>
-      
-     </div>
-     </div>
-     <h1>Modificar Conductor</h1>
-     </div>
-     <?php 
+      </div>
+      </div>
+    
+      <form class="form1" action="respuesta-editar.php" method="post">
 
-include_once '../../conexiones/header.php';
-$id= $_GET["id"];
-$conductor = "SELECT * FROM conductor WHERE id_conductor='$id'";
+      <div class="title">
+      <div class="titulo">
 
-
-     
-     $var_resultado = mysqli_query($obj_conexion,$conductor);
+         <h1>Actualizar Conductor</h1>
+      </div>
+           <br>
+           <br>
+           <br>
+           <br>
+           <?php $var_resultado = mysqli_query($obj_conexion,$conductor);
       while($var_dato=mysqli_fetch_assoc($var_resultado)) {
       ?> 
-     <form action="respuesta-editar" class="form2" id="frminsert"  method="post">
-     <input type="hidden" id="id" name="id"  >
-     <div class="title">
-           <br>
+      <input type="hidden" class="form-control" value="<?php echo $var_dato["id_conductor"];?>"  name="id"  >
            <div class="one-half ">
-              <input type="text"  <?php echo $var_dato["nombre"];?> name="apellido" required=""><span class="barra"></span>
-              <label>Nombre del Conductor </label>
+              <input type="text" id="nombre" name="nombre" value="<?php echo $var_dato["nombre"];?>" required=""><span class="barra"></span>
+              <label>Nombre Conductor </label>
+            </div>  
+            <div class="one-half last ">
+              <input type="text" id="apellidos" name="apellidos" value="<?php echo $var_dato["apellidos"];?>"  required=""><span class="barra"></span>
+              <label>Apellidos </label>
+            </div> 
+            <div class="one-half ">
+              <input type="text" id="documento" name="documento" value="<?php echo $var_dato["documento"];?>" required=""><span class="barra"></span>
+              <label>Documento </label>
             </div>  
             <div class="one-half ">
-              <input type="text"  <?php echo $var_dato["apellido"];?> name="apellido" required=""><span class="barra"></span>
-              <label>Apellidos </label>
-            </div>
-            <div class="one-half ">
-              <input type="text"  <?php echo $var_dato["documento"];?> name="documento" required=""><span class="barra"></span>
-              <label>Documento </label>
-            </div>        
-            <div class="one-half last"> 
-              <input type="text" <?php echo $var_dato["telefono"];?> name="telefono"  required=""><span class="barra"></span>
+              <input type="text" id="telefono" name="telefono"  value="<?php echo $var_dato["telefono"];?>" required=""><span class="barra"></span>
               <label>Telefono </label>
             </div>  
-            <div class="one-half "> 
-              <input type="text" <?php echo $var_dato["correo"];?> name="correo"  required=""><span class="barra"></span>
-              <label>Correo  </label>
-            </div> 
-            <div class="one-half last">
-              <input type="text" <?php echo $var_dato["direccion"];?> name="direccion"  required=""><span class="barra"></span>
-              <label >Direccion </label>             
+            <div class="one-half ">
+              <input type="text" id="correo" name="correo" value="<?php echo $var_dato["correo"];?>" required=""><span class="barra"></span>
+              <label>Correo </label>
             </div>
-            <div class="one-half "> 
-              <input type="text"  <?php echo $var_dato["usuario"];?> name="usuario"  required=""><span class="barra"></span>
-              <label>Nombre de usuario </label>
-            </div> 
-            <input class="reset" type="reset" value="Resetear" >
-              <input class="boton" type="submit" value="Actualizar" > 
-            <?php } mysqli_free_result($var_resultado);?>
-             <br>
-               
-     </div>
-         </form>
-     
-     </div>  
+            <div class="one-half ">
+              <input type="text" id="direccion" name="direccion" value="<?php echo $var_dato["direccion"];?>" required=""><span class="barra"></span>
+              <label>Dirección </label>
+            </div>
+            <div class="one-half ">
+              <input type="text" id="id_usuario" name="id_usuario" value="<?php echo $var_dato["id_usuario"];?>" required=""><span class="barra"></span>
+              <label>Id Usuario </label>
+            </div>
+           
+
+              <br>
+              <?php } mysqli_free_result($var_resultado);?>
+               <input class="boton" type="submit" value="Guardar" > 
+                     
+      </div>
        
-    
-   </div>
- </div>
+          </form>
+    </div>      
+      
+      </div>  
+        
+     
+    </div>
+  </div>
 </div>
