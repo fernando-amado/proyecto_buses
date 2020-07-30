@@ -1,3 +1,8 @@
+<?php 
+include_once'../secciones/header.php';
+include_once'index.php';
+?>
+
 <div class="modal fade" id="insertarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
      
@@ -25,12 +30,16 @@
               <label>lugar de Destino </label>
             </div> 
             <div class="one-half ">
+              <input type="text" id="id_bus" name="id_bus" required=""><span class="barra"></span>
+              <label>Id bus</label>
+            </div> 
+            <div class="one-half ">
               <input type="text" id="hora_partida" name="hora_partida" required=""><span class="barra"></span>
-              <label>Lugar de Partida</label>
+              <label>Hora de Partida</label>
             </div>  
             <div class="one-half last ">
               <input type="text" id="hora_llegada" name="hora_llegada"  required=""><span class="barra"></span>
-              <label>lugar de Destino </label>
+              <label>Hora de llegada </label>
             </div>
             
               <br>

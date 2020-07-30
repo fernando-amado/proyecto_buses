@@ -6,7 +6,7 @@ if(!isset($_SESSION['rol'])){
 
 }
 else{
-    if($_SESSION['rol'] >3 ){
+    if($_SESSION['rol'] !=1){
         header('location: login.php');
     }
 }

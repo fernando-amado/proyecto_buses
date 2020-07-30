@@ -7,8 +7,12 @@ if(isset($_SESSION['rol'])){
     
     switch($_SESSION['rol']){
         case 1:
-            header('location: menu.php');
+            header('location: index.php');
         break;
+        case 2:
+            header('location: index.php');
+        break;
+
         
         default:
     }

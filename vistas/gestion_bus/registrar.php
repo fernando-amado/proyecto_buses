@@ -1,3 +1,7 @@
+<?php
+include_once'../secciones/header.php';
+include_once'index.php';
+?>
 <div class="modal fade" id="insertarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
      

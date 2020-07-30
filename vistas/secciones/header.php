@@ -54,6 +54,7 @@ if(!$obj_conexion)
 	<link rel="stylesheet" href="../../css/estilos-menu.css"  type="text/css" />
 	<link rel="stylesheet" href="../../css/style_icons.css" media="screen, projection" type="text/css" />
 	<link rel="stylesheet" href="../../css/styles.css" type="text/css">
+	<script></script>
 </head>
 <body>
 	<div class="wrapper">

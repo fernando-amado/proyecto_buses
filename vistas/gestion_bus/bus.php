@@ -38,9 +38,10 @@
 					</td>
 					<td>
 
-						<input style="display:none;" type="text" name="id">
-						<button class="btnedit" data-toggle="modal" data-target="#actualizarModal" href="actualizar.php?id=<?php echo $var_dato["id_conductor"]; ?>"></button>
-
+					<a href="actualizar.php?id=<?php echo $var_dato["id_bus"];?>">
+							<button class="btnedit">
+							</button>
+							</a>
 					</td>
 					<td>
 						<form action="#" method="POST">
@@ -63,7 +64,10 @@
 <div class="form-options">
 	<div class="options">
 
-		<span class="btn icon icon-plus" data-toggle="modal" data-target="#insertarModal"></span>
+	<form action="registrar.php" method="">
+			<button class="btn icon icon-plus"  href="registrar.php"></button>
+	</form>
+
 
 		<form action="#" method="POST">
 			<button class="btn disabled icon icon-coding" name="btn" value="form_coding" type="submit" disabled></button>

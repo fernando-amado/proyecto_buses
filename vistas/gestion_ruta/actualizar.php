@@ -1,4 +1,8 @@
-<!-- Modal -->
+
+<?php 
+include_once'../secciones/header.php';
+include_once'index.php';
+?>
 <div class="modal fade" id="actualizarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
      
@@ -23,14 +27,14 @@
             <div class="one-half last ">
               <input type="text" id="lugardestino" name="lugardestino"  required=""><span class="barra"></span>
               <label>lugar de Destino </label>
-            </div> 
+            </div>  
             <div class="one-half ">
               <input type="text" id="horapartida" name="horapartida" required=""><span class="barra"></span>
-              <label>Lugar de Partida</label>
+              <label>Hora de Partida</label>
             </div>  
             <div class="one-half last ">
               <input type="text" id="horallegada" name="horallegada"  required=""><span class="barra"></span>
-              <label>lugar de Destino </label>
+              <label>Hora de llegada </label>
             </div> 
              <br>
               <input class="reset" type="reset" value="Restaurar" >
